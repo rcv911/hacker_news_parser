@@ -1,0 +1,13 @@
+[app]
+port = 8000
+loglevel = 'INFO'
+[parser]
+delay = 5
+url = 'https://news.ycombinator.com/newest'
+[db]
+host = 'localhost'
+port = 7474
+username = 'postgres'
+password = 'admin'
+name = 'postgres'
+driver = 'postgres+psycopg2'
