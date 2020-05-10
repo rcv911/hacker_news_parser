@@ -161,7 +161,7 @@ def main(config_path: str):
     app = init_app(config)
     app_config = config.get('app', None)
 
-    web.run_app(app, port=app_config.get('port', 9999))
+    web.run_app(app, port=app_config.get('port', 8000))
 
 
 if __name__ == '__main__':

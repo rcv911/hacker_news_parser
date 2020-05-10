@@ -3,20 +3,26 @@ FROM python:3.7-alpine
 RUN apk update && apk add --virtual build-deps \
     autoconf \
     automake \
+    libxslt-dev \
     g++ \
+    libstdc++ \
     make \
     build-deps \
+    postgresql-dev \
     gcc \
     python3-dev \
     musl-dev
 
 RUN pip install --no-cache-dir \
     pytoml \
-    python-dateutil \
+    requests \
     aiohttp \
-    aiohttp-rest-api
-
-RUN apk del build-deps gcc
+    aiohttp-rest-api \
+    beautifulsoup4 \
+    psycopg2 \
+    sqlalchemy \
+    pytest \
+    pytest-aiohttp
 
 COPY . /app
 

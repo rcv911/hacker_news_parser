@@ -6,10 +6,12 @@ setup(
     version='0.1.0',
     url='https://github.com/rcv911/hacker_news_parser.git',
     install_requires=[
+        'requests',
         'aiohttp',
         'aiohttp-rest-api',
         'beautifulsoup4',
         'pytest',
+        'pytest-aiohttp'
     ],
     include_package_data=True,
     packages=find_packages(),

@@ -2,10 +2,11 @@
 port = 8000
 loglevel = 'INFO'
 [parser]
-delay = 5
+delay = 60
 url = 'https://news.ycombinator.com/newest'
 [db]
-host = 'localhost'
+#host = 'localhost' # для локального запуска
+host = '' # ввести ip локальной машины
 port = 7474
 username = 'postgres'
 password = 'admin'

@@ -1,7 +1,7 @@
 version: '2'
 services:
-  test_api:
-    container_name: test_api
+  hnp_api:
+    container_name: hnp_api
     build:
       context: ./
       dockerfile: Dockerfile
